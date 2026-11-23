@@ -1,49 +1,42 @@
-# HACKLE // CYBER INCIDENT TRIAGE
+# THREATLE // DEEP PACKET INFILTRATION
 
-A retro-cyber daily incident response puzzle inspired by Courtdle and Hack The Box.
+A full-screen retro-cyber daily incident triage game inspired by Courtdle, Hack The Box, and Krillion.
 
-Analyze active security incident telemetry, inspect raw packet dumps and system event logs, request progressive tactical hints, and submit your technical diagnosis to clear the daily queue.
-
----
-
-## Game Overview
-
-Each shift presents 3 critical security incidents drawn from real-world attack vectors and penetration testing scenarios:
-
-- **Telemetry Intercept:** Review incoming alert parameters, target IP addresses, active service ports, and raw log traces (e.g., Kerberos tickets, EDR process spawns, HTTP WAF logs).
-- **Tactical Hints:** Unlock up to 3 progressive hints per case (Tactic & Intent, Log Breakdown, and a 50/50 Lifeline).
-- **Technique Specification Modal:** Click the `[ ? ]` button beside any choice to study the attack definition, MITRE ATT&CK ID, and mitigation before entering your verdict.
-- **Triage Feedback:** If a diagnosis is incorrect, the system provides a technical objection explaining why that attack vector does not match the observed telemetry.
+Instead of sinking into the ocean like Krillion, **Threatle** sinks you deeper into the layers of a compromised enterprise network with each verified answer—from the outer perimeter firewall down into the deep zero-day root core.
 
 ---
 
-## Visual Design & Aesthetics
+## The Cyber Sinking Mechanic (Infiltration Depth)
 
-- **CRT Phosphor Terminal:** Full-screen horizontal scanline raster overlay with phosphor green accents.
-- **Cyber-Surveillance Reticle:** Top monitor vector art inspired by retro mass-surveillance aesthetics, binary memory dumps, and microchip bus traces.
-- **Circuit Progress Indicators:** 45-degree diamond-cut circuit nodes that track verified, assisted, and flagged diagnoses.
-- **Declassified Incident Dossier:** High-contrast classified field report styling with embedded raw log terminals.
+As you solve each incident case, your telemetry probe sinks deeper into the architecture:
 
----
-
-## Tech Stack
-
-- **Zero External Dependencies:** Built with pure vanilla HTML5, CSS3, and JavaScript.
-- **Offline Ready:** Operates locally in any browser with zero network or server requirements.
-- **GitHub Pages Compatible:** Structured as a standalone single-page application (`index.html`).
+- **Layer 1: Perimeter Ingress (-1,200m)**: Outer Web Application Firewall (WAF), public DMZ, and edge services.
+- **Layer 2: Intranet Subnet (-4,500m)**: Internal lateral movement, domain controllers, and Active Directory key distribution.
+- **Layer 3: Host Kernel Ring 0 (-8,900m)**: Low-level memory segments, EDR evasion, and execution stack control.
+- **Layer 4: Zero-Day Abyss (-12,000m)**: Complete root core compromise and air-gapped system access.
 
 ---
 
-## Local Setup
+## Visual Design & Full-Screen Cockpit
 
-To run locally on macOS or Linux:
+- **Three-Panel HUD Cockpit:**
+  - **Left Rail:** Interactive vertical infiltration shaft with live depth meter and illuminated network layer nodes.
+  - **Center Console:** Wide retro-CRT surveillance monitor with targeting reticles, microchip bus traces, and classified dossiers.
+  - **Right Rail:** Real-time simulated packet stream and threat radar indicators.
+- **Authentic Retro CRT Aesthetics:** Scanline raster overlay, phosphor green glow (`#00ff66`), and monospace terminal typography.
+- **Tactical Hints & Technique Specs:** 3-tier progressive hints with 50/50 lifeline and dedicated `[ ? ]` specification modal for learning MITRE ATT&CK techniques.
 
+---
+
+## Live Links & Local Play
+
+- **Play Online (GitHub Pages):** [https://shrivastavaii.github.io/threatle/](https://shrivastavaii.github.io/threatle/)
+- **GitHub Repository:** [https://github.com/shrivastavaii/threatle](https://github.com/shrivastavaii/threatle)
+
+To run locally:
 ```bash
-# Clone the repository
-git clone https://github.com/shrivastavaii/hackle.git
-cd hackle
-
-# Open in default browser
+git clone https://github.com/shrivastavaii/threatle.git
+cd threatle
 open index.html
 ```
 
@@ -51,4 +44,4 @@ open index.html
 
 ## License
 
-MIT License. Free for educational and training purposes.
+MIT License. Free for educational and training use.
